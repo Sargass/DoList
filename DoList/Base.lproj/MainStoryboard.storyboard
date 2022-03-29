@@ -58,16 +58,29 @@
                     <view key="view" contentMode="scaleToFill" id="hbm-Jk-Iqb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wPi-rX-g4t">
+                                <rect key="frame" x="20" y="88" width="374" height="137"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ve0-Px-zna"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="ve0-Px-zna" firstAttribute="bottom" secondItem="wPi-rX-g4t" secondAttribute="bottom" constant="637" id="3fw-rO-5qm"/>
+                            <constraint firstItem="ve0-Px-zna" firstAttribute="trailing" secondItem="wPi-rX-g4t" secondAttribute="trailing" constant="20" id="9I5-pw-D8z"/>
+                            <constraint firstItem="wPi-rX-g4t" firstAttribute="top" secondItem="ve0-Px-zna" secondAttribute="top" id="MTP-it-Rb9"/>
+                            <constraint firstItem="wPi-rX-g4t" firstAttribute="leading" secondItem="ve0-Px-zna" secondAttribute="leading" constant="20" id="pRr-e6-eGF"/>
+                            <constraint firstItem="wPi-rX-g4t" firstAttribute="top" relation="lessThanOrEqual" secondItem="ve0-Px-zna" secondAttribute="top" constant="20" id="tUT-UA-P1K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v1z-YX-Myo">
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="done" id="fkB-f6-QuY"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="fkB-f6-QuY"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exh-Dn-A0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="-2"/>
+            <point key="canvasLocation" x="1942.0289855072465" y="-2.0089285714285712"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KbH-bs-Kox">
@@ -93,6 +106,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
